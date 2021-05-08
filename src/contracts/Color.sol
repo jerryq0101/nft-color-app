@@ -8,8 +8,6 @@ contract Color is ERC721 {
     mapping(string => bool) _colorExists; // another mapping array for knowing if the color is taken or not
 
 
-
-
     // constructor(name, symbol)
     constructor() ERC721("Color", "COLOR") public {
     }
@@ -29,8 +27,4 @@ contract Color is ERC721 {
         // Color - track its existence
         _colorExists[_color] = true;
     }
-
-
-    
-
 }
